@@ -28,3 +28,13 @@ my_str = "Ako ay pinoy. Sa puso't diwa"
 all_vowels = find_vowels.findall(my_str)
 print("All vowels: ", all_vowels)
 print("Len: ", len(all_vowels))
+
+string_to_replace = 'this is the\
+    samplestring41thatweneed\
+    sogood 111'
+pattern = '\s+'
+replace = ''
+res_101 = re.sub(pattern, replace, string_to_replace)
+print("res101: ", res_101)
+res_subn = re.subn(pattern, replace, string_to_replace)
+print("res subn: ", res_subn)
